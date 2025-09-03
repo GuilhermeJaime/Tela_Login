@@ -6,21 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="#" href="#" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
-    <div>
+    <main>
 
-      <h2>Login</h2>
-      <form action="" method="post">
+      <section id="login">
+        <div id="imagem">
 
-        <input type="text" name="nome" id="inome" placeholder="Digite o seu Nome"><br>
-        <input type="password" name="password" id="isenha" placeholder="digite sua senha"><br>
-        <input type="submit" value="Login"><br>
-        <input type="button" value="Esqueceu sua senha?"><br>
-      </form>
+        </div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>Seja bem-vindo, faça login ou inicie sessão</p>
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="login">
+              <span class="material-icons md-10">person</span>
+              <input type="email" name="email" id="iemail" placeholder="Digite seu email" autocomplete="email"
+                required><br>
+              <span class="material-icons md-10">vpn_key</span>
+              <input type="password" name="senha" id="isenha" placeholder="Insira a senha"
+                autocomplete="current-password" required minlength="8">
 
-    </div>
+            </div>
+
+            <div class="campo">
+              <input type="submit" value="Entrar">
+              <a href="#" class="botao">Esqueci a senha <i class="material-icons">mail</i></a>
+            </div>
+
+
+          </form>
+        </div>
+      </section>
+    </main>
 
   </body>
 
